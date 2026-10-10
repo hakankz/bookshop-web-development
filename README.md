@@ -16,3 +16,9 @@ Serve this folder with any static web server, then open index.html. No build ste
 This is coursework, not a production checkout or payment service. Use fabricated testing data only; never enter real payment information. API availability has not been verified. The card pattern only accepts the original 51–55 prefix range; validation is not a complete card verification system. About/Contact links are placeholders. The original pages lack a viewport meta tag, use generic image alt text and a div-based navigation toggle, so responsive behaviour and keyboard accessibility need further work.
 
 Original HTML, CSS and JavaScript are preserved. Book-cover images are third-party artwork used for the academic catalogue; no ownership or licence over that artwork is claimed. The full university report and student identifier are excluded.
+
+## Original project evidence
+
+![Original bookshop homepage](docs/Bookshop_Original_Homepage.png)
+
+Captured from the original website served locally. See the [original validation and API request code](js/pay.js). The API request was not submitted during the portfolio review.
