@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+  }
+
+  .site-title {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .site-title h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+  }
+  .page-heading {
+    background-color: #eee;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .page-heading h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  
+  
+  /* --- Shared styles (desktop) --- */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 60px; /* ⬅️ NEW: ensures height for nav toggle */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.nav-links {
+  display: flex;
+  gap: 3em;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hide toggle by default (desktop) */
+.nav-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 9999;
+    font-size: 1.3em;
+    padding: 0.5em;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    margin-top: 0.5em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 0.6em 0;
+    font-size: 1em;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .book {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .book img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  
+  .book button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .book-info button {
+    width: auto;
+    margin: 15px auto 0 auto;
+    display: block;
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .book-info button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .book {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+    .book img {
+      margin: 0 0 10px 0;
+    }
+  
+
+/* Payment form container */
+form#payment-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+form#payment-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+
+form#payment-form input,
+form#payment-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+form#payment-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+form#payment-form button:hover {
+  background-color: #555;
+}
+
+#message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #b00020; 
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#success-message {
+  background-color: #e6ffe6;
+  color: #006400;
+  border: 1px solid #b3ffb3;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 2px 8px rgba(0, 100, 0, 0.1);
+}
+
+
